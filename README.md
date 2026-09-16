@@ -54,6 +54,29 @@ XML is used to design the user interface of the Android application.
 - ImageView implementation
 - Activity navigation
 - Simple and user-friendly interface
+- 
+**Important:** There should be **3 backticks before `## 11. Test Cases`**.
+
+Then make sure your screenshot section is exactly like this:
+
+```markdown
+## 12. Output
+
+The application successfully registers student details and displays the registered students using ListView and ImageView.
+
+## 13. Screenshots
+
+### Student Registration Screen
+![Student Registration Screen](Screenshots/01_Student_Registration_Screen.png)
+
+### Registered Students Screen
+![Registered Students Screen](Screenshots/02_Registered_Students_Screen.png)
+
+### MainActivity Code
+![MainActivity Code](Screenshots/03_MainActivity_Code.png)
+
+### StudentListActivity Code
+![StudentListActivity Code](Screenshots/04_StudentListActivity_Code.png)
 
 ## 8. Procedure
 1. Create a new Android Studio project.
