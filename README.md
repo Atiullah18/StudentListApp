@@ -1,148 +1,129 @@
-# StudentListApp
+# Student List App
 
-## Experiment No. 7
+## 1. Project Title
+**Student List App – Student Registration and Display Application**
 
-### Title
-**Creating an Adaptive Android Application with ListView and ImageView**
+## 2. Aim
+To develop an Android application that allows users to register student details and display registered students using ListView and ImageView.
 
----
+## 3. Scenario
+A college needs a simple Android application to register student information and display the registered students in a list. The application provides a registration screen where student details can be entered and a student list screen where registered students are displayed along with their images.
 
-## Aim
+## 4. Objectives
+- To create a student registration screen.
+- To accept student details from the user.
+- To display registered students using ListView.
+- To display student images using ImageView.
+- To navigate between Activities using Intent.
+- To understand Android layouts, Activities and UI components.
 
-To create an Android application using ListView and ImageView to display registered student details along with their corresponding images.
-
----
-
-## Requirements
-
+## 5. Technologies Used
 - Android Studio
 - Kotlin
 - XML
-- Android Device / Emulator
+- Android SDK
 - ListView
 - ImageView
-- BaseAdapter
-- SharedPreferences
+- Intent
+- Git
+- GitHub
 
----
-
-## Introduction
-
-StudentListApp is an Android application developed using Kotlin and XML. It allows users to register students by entering their Name, Roll Number, and Course.
-
-The student details are stored locally using SharedPreferences and displayed using a ListView. ImageView is used to display student images beside each student record.
-
----
-
-## Concept / Technology Used
+## 6. Concepts Used
 
 ### ListView
-ListView is an Android UI component used to display multiple items in a vertically scrollable list.
+ListView is an Android UI component used to display multiple items in a vertical scrolling list. In this project, it is used to display registered student information.
 
 ### ImageView
-ImageView is used to display images in the Android application.
+ImageView is used to display student images in the application.
 
-### BaseAdapter
-BaseAdapter connects the student data with the ListView and displays each student as an individual list item.
+### Activity
+An Activity represents a screen of an Android application. This project uses Activities for student registration and displaying the student list.
 
-### SharedPreferences
-SharedPreferences is used to store student information locally on the device.
+### Intent
+Intent is used to navigate from one Activity to another Activity and pass information between Activities.
 
-### Kotlin
-Kotlin is used as the programming language for developing the Android application.
-
-### XML
+### XML Layout
 XML is used to design the user interface of the Android application.
 
----
-
-## Scenario
-
-A college wants a simple Android application to register and display student details.
-
-The user enters:
-
-- Student Name
-- Roll Number
-- Course
-
-After clicking the **SAVE** button, the student details are stored using SharedPreferences.
-
-By clicking the **VIEW ALL** button, all registered students are displayed using ListView.
-
-Each student record contains:
-
-- Student Image
-- Student Name
-- Roll Number
-- Course
-
-Three student images are used and automatically repeated for additional student records.
-
----
-
-## Features
-
-- Student Registration
-- Name input
-- Roll Number input
-- Course input
-- Save student details
-- View all registered students
+## 7. Application Features
+- Student registration
+- Student details input
+- Student list display
+- Student images
 - ListView implementation
 - ImageView implementation
-- Multiple student records
-- Repeated student images
-- Clear registration form
-- Clear all registered students
-- Local data storage using SharedPreferences
+- Activity navigation
+- Simple and user-friendly interface
 
----
+## 8. Procedure
+1. Create a new Android Studio project.
+2. Design the student registration screen using XML.
+3. Add the required input fields and buttons.
+4. Create the StudentListActivity.
+5. Design the student list layout.
+6. Add student images to the drawable folder.
+7. Implement ListView to display student details.
+8. Use ImageView to display student images.
+9. Use Intent for Activity navigation.
+10. Run the application on an emulator or Android device.
+11. Test the application using different student details.
+12. Upload the project and screenshots to GitHub.
 
-## Application Flow
+## 9. Algorithm / Steps
+1. Start the application.
+2. Display the student registration screen.
+3. Enter the required student details.
+4. Click the registration button.
+5. Store/pass the entered student information.
+6. Navigate to the student list screen.
+7. Display the student details using ListView.
+8. Display the student image using ImageView.
+9. Verify the displayed information.
+10. Stop the application.
+
+## 10. Folder and File Structure
 
 ```text
-Student Registration
-        ↓
-Enter Name, Roll No and Course
-        ↓
-       SAVE
-        ↓
-Store Data using SharedPreferences
-        ↓
-     VIEW ALL
-        ↓
-Registered Students
-        ↓
-ListView + ImageView
-        ↓
-Student Image + Name + Roll No + Course
-
-
 StudentListApp/
+│
+├── .idea/
 │
 ├── app/
 │   └── src/
-│       └── main/
-│           ├── java/
-│           │   └── com/example/studentlistapp/
-│           │       ├── MainActivity.kt
-│           │       └── StudentListActivity.kt
-│           │
-│           ├── res/
-│           │   ├── drawable/
-│           │   │   ├── student1.png
-│           │   │   ├── student2.png
-│           │   │   ├── student3.png
-│           │   │   ├── student_registration.png
-│           │   │   └── student_icon.xml
-│           │   │
-│           │   └── layout/
-│           │       ├── activity_main.xml
-│           │       ├── activity_student_list.xml
-│           │       └── student_item.xml
-│           │
-│           └── AndroidManifest.xml
+│       ├── androidTest/
+│       │
+│       ├── main/
+│       │   ├── java/
+│       │   │   └── com/example/studentlistapp/
+│       │   │       ├── MainActivity.kt
+│       │   │       └── StudentListActivity.kt
+│       │   │
+│       │   ├── res/
+│       │   │   ├── drawable/
+│       │   │   │   ├── student1.png
+│       │   │   │   ├── student2.png
+│       │   │   │   ├── student3.png
+│       │   │   │   ├── student_icon.xml
+│       │   │   │   └── student_registration.png
+│       │   │   │
+│       │   │   ├── layout/
+│       │   │   │   ├── activity_main.xml
+│       │   │   │   ├── activity_student_list.xml
+│       │   │   │   └── student_item.xml
+│       │   │   │
+│       │   │   ├── mipmap-anydpi-v26/
+│       │   │   ├── mipmap-hdpi/
+│       │   │   ├── mipmap-mdpi/
+│       │   │   ├── mipmap-xhdpi/
+│       │   │   ├── mipmap-xxhdpi/
+│       │   │   ├── mipmap-xxxhdpi/
+│       │   │   └── values/
+│       │   │
+│       │   └── AndroidManifest.xml
+│       │
+│       └── test/
+│
+├── gradle/
 │
 ├── Screenshots/
 │   ├── 01_Student_Registration_Screen.png
@@ -153,5 +134,7 @@ StudentListApp/
 ├── .gitignore
 ├── build.gradle.kts
 ├── gradle.properties
+├── gradlew
+├── gradlew.bat
 ├── settings.gradle.kts
 └── README.md
